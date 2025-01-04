@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(90deg, #001024, #002555, #001024);
+    margin: 0;
+    font-family: "Monserrat";
+    color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+}
+
+header {
+    padding: 50px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+nav a + a {
+    padding-left: 40px;
+}
+
+nav a:hover {
+    color: #ffe251;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 116px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 431px;
+    line-height: 90%;
+    margin: 0;
+}
+.friday {
+    font-size: 106px;
+}
+
+.header-p {
+    background-color: #e50103;
+    width: 426px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    padding: 10px 27px 14px;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+
+.bg-image {
+    background-image: url(../images/sale-box.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.proposal-courses {
+    width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 15px;
+    column-gap: 27px;
+}
+
+.proposal-courses a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 175px;
+    padding: 5px 30px 6px 45px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 9px;
+    font-size: 21px;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-size: 27.4px;
+    background-position: 10px center;
+    user-select: none;
+}
+.frontend {
+    background-image: url(../images/Frontend.svg);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.full_stack {
+    background-image: url(../images/full_stack.svg);
+}
+
+.qa {
+    background-image: url(../images/qa.svg);
+}
+
+.python {
+    background-image: url(../images/python.svg);
+}
+
+.java {
+    background-image: url(../images/java.svg);
+}
+
+.c_net {
+    background-image: url(../images/c_net.svg);
+}
