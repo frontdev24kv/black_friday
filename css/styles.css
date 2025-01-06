@@ -9,14 +9,14 @@ html {
 body {
     background: linear-gradient(90deg, #001024, #002555, #001024);
     margin: 0;
-    font-family: "Monserrat";
+    font-family: "Montserrat";
     color: #fff;
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
 }
 
 header {
@@ -37,7 +37,7 @@ nav a {
     transition: all .3s;
 }
 
-nav a + a {
+nav a+a {
     padding-left: 40px;
 }
 
@@ -53,9 +53,23 @@ h1 {
     width: 431px;
     line-height: 90%;
     margin: 0;
+    position: relative;
 }
-.friday {
+
+h1 span {
     font-size: 106px;
+}
+
+h1:after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/discount.png);
+    background-position: center center;
+    background-size: 227px 194px;
+    width: 227px;
+    height: 194px;
+    top: 40%;
+    left: 88%;
 }
 
 .header-p {
@@ -80,7 +94,7 @@ h1 {
     width: 580px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     row-gap: 15px;
     column-gap: 27px;
 }
@@ -88,9 +102,11 @@ h1 {
 .proposal-courses a {
     color: #fff;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     width: 175px;
-    padding: 5px 30px 6px 45px;
+    height: 40px;
+    /* padding: 0 30px 6px 45px; */
+    padding-left: 50px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 9px;
     font-size: 21px;
@@ -99,7 +115,10 @@ h1 {
     background-size: 27.4px;
     background-position: 10px center;
     user-select: none;
+    line-height: 40px;
+    transition: background-color .3s;
 }
+
 .frontend {
     background-image: url(../images/Frontend.svg);
 }
@@ -110,6 +129,7 @@ h1 {
 
 .full_stack {
     background-image: url(../images/full_stack.svg);
+    position: relative;
 }
 
 .qa {
@@ -124,6 +144,416 @@ h1 {
     background-image: url(../images/java.svg);
 }
 
+a.java {
+    background-size: 23px 31px;
+}
+
 .c_net {
     background-image: url(../images/c_net.svg);
+}
+
+.proposal-courses a:hover {
+    background-color: #8394B0;
+}
+
+h2 {
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 170px;
+}
+
+.card {
+    width: 270px;
+    height: 406px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 20px;
+    transition: background-color .5s;
+}
+
+.card:hover {
+    background-color: #f03131;
+}
+
+.card b {
+    display: inline-block;
+    /* text-align: center; */
+    padding: 150px 25px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    width: 246px;
+}
+
+.card p {
+    font-weight: 500;
+    padding: 0 12px 52px;
+}
+
+.advantages {
+    background-image: url(../images/cart_1.svg);
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    /* padding: 0 25px; */
+}
+
+.high-salary {
+    background-image: url(../images/cart_2.svg);
+    background-repeat: no-repeat;
+    background-position: center 30px;
+}
+
+.speciality {
+    background-image: url(../images/cart_3.svg);
+    background-repeat: no-repeat;
+    background-position: center 30px;
+}
+
+.card.remote b {
+    background-image: url(../images/cart_4.svg);
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    padding: 150px 50px 20px;
+}
+
+.speciality-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 168px;
+}
+
+.speciality-card {
+    width: 370px;
+    height: 401px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.speciality-card:hover {
+    background-color: #385179;
+}
+
+.speciality-card h3 {
+    line-height: 130%;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 26.5px 30px 30px;
+    background-repeat: no-repeat;
+    background-size: 60px 116px;
+    background-position: 100% center;
+}
+
+.speciality-card b {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px;
+    line-height: 130%;
+}
+
+.speciality-card p {
+    font-size: 20px;
+    margin: 21px 30px 21px;
+    line-height: 130%;
+}
+
+.marg.bot {
+    margin-bottom: 47px;
+}
+
+.speciality-card p span {
+    font-weight: 700;
+}
+
+.btn {
+    margin: 9px 30px 31px;
+    width: 310px;
+    height: 56px;
+    border-radius: 100px;
+    border: 2px solid #e50103;
+    background-color: #1A3455;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e50103;
+}
+
+.consult {
+    text-align: left;
+}
+
+.consult span {
+    color: #FFD000;
+}
+
+form {
+    margin: 98px 84px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 415px;
+    /* height: 262px; */
+    row-gap: 14px;
+}
+
+.input-name,
+.input-phone,
+.consult_btn {
+    width: 100%;
+    height: 78px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 22px 2px 22px 35px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.input-phone {
+    background-image: url(../images/flag.svg);
+    background-repeat: no-repeat;
+    background-position: 35px center;
+    padding-left: 90px;
+}
+
+.consult_btn {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 18px 15px;
+    line-height: 140%;
+    background-color: #1a3455;
+    border: 2px solid #e50103;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.consult_btn:hover {
+    background-color: #e50103;
+}
+
+.consult-wrapper {
+    margin-top: -98px;
+    display: flex;
+    position: relative;
+    height: 469px;
+    /* margin-bottom: 0; */
+}
+
+.lines {
+    margin-top: -190px;
+    width: 100%;
+    position: relative;
+    height: 422px;
+    z-index: 0;
+    /* margin-bottom: 41px; */
+}
+
+.red_line {
+    background-image: url(../images/red_line.png);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 422px;
+    position: absolute;
+}
+
+.yellow_line {
+    background-image: url(../images/yellow_line.png);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 347px;
+    position: absolute;
+}
+
+.calling_man {
+    background-image: url(../images/calling_man.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    width: 604px;
+    height: 469px;
+    position: absolute;
+}
+
+footer {
+    /* margin-top: 341px; */
+    padding: 53px 193px 47px 77px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.footer-flex {
+    display: flex;
+}
+
+.common-info {
+    width: 308px;
+    margin-right: 117px;
+}
+
+.common-info p {
+    margin-top: 25px;
+    margin-bottom: 76px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    width: 280px;
+}
+
+small {
+    font-size: 12px;
+    line-height: 140%;
+}
+
+.contacts h4,
+.socials h4 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacts-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    width: 286px;
+    transition: color .3s;
+}
+
+.phone:hover {
+    color: #ffe000;
+    background-image: url(../images/contacts/phone_2.png);
+
+}
+
+.phone {
+    background-image: url(../images/contacts/phone_1.png);
+
+}
+
+.site {
+    background-image: url(../images/contacts/site_1.png);
+
+}
+.site:hover {
+    background-image: url(../images/contacts/site_2.png);
+    color: #ffe000;
+}
+
+.telegram {
+    background-image: url(../images/contacts/telegram_1.png);
+}
+.telegram:hover {
+    background-image: url(../images/contacts/telegram_2.png);
+    color: #ffe000;
+}
+
+.e-post {
+    background-image: url(../images/contacts/e_post_1.png);
+}
+.e-post:hover {
+    background-image: url(../images/contacts/e_post_2.png);
+    color: #ffe000;
+}
+
+.socials {
+    margin-left: 203px;
+    position: relative;
+    height: 228px;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: space-between;
+    width: 256px;
+    transform: background-image 1s;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 34px;
+    height: 32px;
+}
+
+.instagram {
+    background-image: url(../images/socials/instagram_1.png);
+}
+
+.instagram:hover {
+    background-image: url(../images/socials/instagram_2.png);
+}
+
+.facebook {
+    background-image: url(../images/socials/facebook_1.png);
+}
+
+.facebook:hover {
+    background-image: url(../images/socials/facebook_2.png);
+
+}
+
+.youtube {
+    background-image: url(../images/socials/youtube_1.png);
+
+}
+
+.youtube:hover {
+    background-image: url(../images/socials/youtube_2.png);
+
+}
+
+.linkedin {
+    background-image: url(../images/socials/linkedin_1.png);
+
+}
+
+.linkedin:hover {
+    background-image: url(../images/socials/linkedin_2.png);
+
+}
+
+.tg {
+    background-image: url(../images/socials/tg_1.png);
+}
+
+.tg:hover {
+    background-image: url(../images/socials/tg_2.png);
+}
+.arrow {
+    background-image: url(../images/socials/arrow_1.png);
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    background-image: url(../images/socials/arrow_2.png);
 }
